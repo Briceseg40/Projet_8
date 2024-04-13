@@ -1,0 +1,63 @@
+.body {
+  width: 1240px;
+  margin: 25px auto;
+}
+.body nav {
+  margin: 25px 0;
+}
+.body nav .organ-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.body nav .organ-nav div {
+  position: relative;
+}
+.body nav .organ-nav div ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.body nav .organ-nav div ul li {
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.body nav .organ-nav div ul li:active {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.body #first-section div {
+  position: relative;
+}
+.body #first-section div div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border-radius: 25px;
+}
+.body #first-section div img {
+  width: 100%;
+  height: 100%;
+  max-height: 223px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+  z-index: 0;
+}
+.body #first-section div h3 {
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 48px;
+  z-index: 2;
+}/*# sourceMappingURL=Nav.css.map */
