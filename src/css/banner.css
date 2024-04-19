@@ -1,35 +1,31 @@
-.body {
-  width: 1240px;
-  margin: 25px auto;
-}
-.body nav {
-  margin: 25px 0;
-}
-.body nav .organ-nav {
+.organ-nav {
   display: flex;
   justify-content: space-between;
+  max-width: 1240px;
+  margin: 25px auto;
 }
-.body nav .organ-nav div {
+.organ-nav div {
   position: relative;
 }
-.body nav .organ-nav div ul {
+.organ-nav div ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
-.body nav .organ-nav div ul li {
+.organ-nav div ul li {
   padding-left: 50px;
   font-size: 24px;
   font-weight: 500;
 }
-.body nav .organ-nav div ul li:active {
+.organ-nav div ul li:active {
   text-decoration: underline;
   cursor: pointer;
 }
-.body #first-section div {
+
+#first-section div {
   position: relative;
 }
-.body #first-section div div {
+#first-section div div {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,7 +35,7 @@
   z-index: 1;
   border-radius: 25px;
 }
-.body #first-section div img {
+#first-section div img {
   width: 100%;
   height: 100%;
   max-height: 223px;
@@ -49,7 +45,7 @@
   position: relative;
   z-index: 0;
 }
-.body #first-section div h3 {
+#first-section div h3 {
   margin: 80px auto;
   display: flex;
   justify-content: center;
@@ -60,4 +56,4 @@
   color: white;
   font-size: 48px;
   z-index: 2;
-}/*# sourceMappingURL=Nav.css.map */
+}/*# sourceMappingURL=Banner.css.map */

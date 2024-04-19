@@ -1,0 +1,28 @@
+.container-footer {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    height: 209px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .grille-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+            width: 122px;
+           margin: 60px 0 40px 0;
+            height: 40px;
+         
+        }
+        p {
+            font-size: 24px;
+            margin: 0;
+            
+            color: white;
+        }
+    }
+}
