@@ -1,0 +1,108 @@
+.infos-id {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.infos-id .card-infos {
+  margin: 0 auto;
+}
+.infos-id .card-infos .img-id img {
+  max-height: 415px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+.infos-id .card-infos .two-side {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.infos-id .card-infos .two-side .left-side {
+  text-align: left;
+}
+.infos-id .card-infos .two-side .left-side h3 {
+  margin: 0 0 5px 0;
+  color: #FF6060;
+  font-size: 36px;
+}
+.infos-id .card-infos .two-side .left-side .p-location {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.infos-id .card-infos .two-side .left-side .tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.infos-id .card-infos .two-side .left-side .tags #tags-one {
+  margin-left: 0;
+}
+.infos-id .card-infos .two-side .left-side .tags p {
+  background-color: #FF6060;
+  color: white;
+  max-width: 155px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 5px 15px;
+}
+.infos-id .card-infos .two-side .right-side {
+  height: 120px;
+  text-align: right;
+}
+.infos-id .card-infos .two-side .right-side div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.infos-id .card-infos .two-side .right-side div p {
+  font-size: 18px;
+  color: #FF6060;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  max-width: 93px;
+}
+.infos-id .card-infos .two-side .right-side div img {
+  max-width: 64px;
+  max-height: 64px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 50%;
+}
+.infos-id .card-infos .two-side .right-side .ratings {
+  margin: 10px 0;
+}
+.infos-id .card-infos .defilement-button {
+  margin-bottom: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.infos-id .card-infos .defilement-button .defilement-individual {
+  width: 45%;
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 5px;
+}
+.infos-id .card-infos .defilement-button .defilement-individual button {
+  background-color: #FF6060;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.infos-id .card-infos .defilement-button .defilement-individual img {
+  max-width: 32px;
+  padding-right: 15px;
+}/*# sourceMappingURL=appart.css.map */
