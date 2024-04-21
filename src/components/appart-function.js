@@ -1,13 +1,14 @@
-import jsonData from '../logements.json';
+import React from 'react';
 
-
-
-function CreateTags() {
-    for (let i = 0; i < jsonData.tags.length; i++) {
-		const tag = document.createElement("p");
-		const textNode = document.createTextNode("selectedData.tags");
-        tag.appendChild(textNode);
-        const container = document.getElementsByClassName("tags");
-        container.appendChild(tag);
-    }
+export function CreateTags({ tags }) {
+    return tags.map((tag, index) => (
+        <p key={index}>{tag}</p>
+    ));
 }
+export function Ratings({ rating }) {
+    return rating.map((rating, index) => (
+        <p key={index}>{rating}</p>
+    ));
+}
+
+
