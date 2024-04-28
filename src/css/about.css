@@ -4,10 +4,25 @@
 .container-banner .about-infos {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
 }
 .container-banner .about-infos .collapse {
+  cursor: pointer;
   width: 60%;
-  margin: 15px 0;
+  margin: 15px auto;
+}
+
+@media (max-width: 1024px) {
+  .container-banner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container-banner .about-infos {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  .container-banner .about-infos .collapse {
+    width: 95%;
+    margin: 15px 0;
+  }
 }/*# sourceMappingURL=about.css.map */

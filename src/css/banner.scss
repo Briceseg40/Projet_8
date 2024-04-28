@@ -37,18 +37,14 @@
 }
 }
 
-@media (min-width: 375px) { 
+@media (max-width: 1024px) { 
     .banner  {
-
-        .overlay {
-
-        }
         h3 {
             padding-left: 25px;
             font-size: 24px;
-        white-space: wrap;
-        text-align: left;
-        width: 100%;
+            white-space: wrap;
+            text-align: left;
+            width: 100%;
 
         }
     }

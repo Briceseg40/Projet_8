@@ -26,3 +26,20 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .container-footer {
+
+    
+    
+        .grille-footer {
+            img {
+                margin: 10px;
+            }
+            p {
+                font-size: 12px;
+                width: 100px;
+            }
+        }
+    }
+}

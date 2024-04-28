@@ -6,11 +6,35 @@
         margin: 0 auto;
 
         .img-id {
+            position: relative;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            transition: opacity 0.3s;
+            max-height: 415px;
+
             img {
-                max-height: 415px;
+                position: relative;
+                top: 0;
+                height: 415px;
                 width: 100%;
                 object-fit: cover;
                 border-radius: 25px;
+            }
+            .prev, .next {
+                width: 46px;
+                height: 79px;
+                position: absolute;
+                top: 45%;
+                cursor: pointer;
+                
+            }
+            .prev {
+                left: 10px;
+            }
+            .next {
+                right: 10px;
+                z-index: 1;
             }
         }
 
@@ -91,11 +115,114 @@
             margin-bottom: 25px;
             display: flex;
             width: 100%;
+            cursor: pointer;
             justify-content: space-between;
 
         }
     }
+}
 
-
-
+@media (max-width: 1024px) {
+    .infos-id {
+        width: 90%;
+        margin: 0 auto;
+    
+        .card-infos {
+            margin: 0 auto;
+            width: 100%;
+    
+            .img-id {
+                img {
+                    max-height: 415px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+    
+            .two-side {
+                display: flex;
+                justify-content: space-between;
+               flex-direction: column;
+    
+                .left-side {
+                    
+    
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+    
+                    .p-location {
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                    }
+                    .tags { 
+                        margin-bottom: 5px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        p {
+                            background-color: #FF6060;
+                            color: white;
+                            max-width: 155px;
+                            text-align: center;
+                            border-radius: 10px;
+                            margin: 0 20px 0 0;
+                            padding: 5px 15px;
+                        }
+                    }
+                    
+                }
+    
+                .right-side {
+                    height: auto;
+                    text-align: right;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                  
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        p {
+                            font-size: 12px;
+                      
+                            margin-right: 10px;
+                            flex-wrap: wrap;
+                            max-width: 60px;                
+                        }
+                        img {
+                           
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .ratings {
+                        margin: 10px 0;
+                        font-size: 18px;
+                        span {
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            .collapse-container {
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: space-between;
+                .collapse {
+                    width: 95%;
+                }
+    
+            }
+        }
+    
+    
+    
+    }
 }

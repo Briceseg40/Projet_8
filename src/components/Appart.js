@@ -6,6 +6,8 @@ import { CreateTags } from "./appart-function";
 import RatingStars from "./RatingStars"
 import Collapse from "./Collapse"
 import Error from "./Error"
+import Diaporama from "./Diaporama"
+
 
 export default function Appart() {
     const params = useParams();
@@ -19,7 +21,7 @@ export default function Appart() {
         <div className="infos-id">
             <div className="card-infos">
                 <div className="img-id">
-                    <img src={selectedData.cover} alt={selectedData.title} />
+                    <Diaporama images={selectedData.pictures} alt={selectedData.title} />
                 </div>
                 <div className="two-side">
                     <div className="left-side">
