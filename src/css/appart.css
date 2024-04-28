@@ -74,37 +74,14 @@
 }
 .infos-id .card-infos .two-side .right-side .ratings {
   margin: 10px 0;
+  font-size: 26px;
 }
-.infos-id .card-infos .defilement-button {
+.infos-id .card-infos .two-side .right-side .ratings span {
+  padding-right: 10px;
+}
+.infos-id .card-infos .collapse-container {
   margin-bottom: 25px;
   display: flex;
   width: 100%;
   justify-content: space-between;
-}
-.infos-id .card-infos .defilement-button .defilement-individual {
-  width: 45%;
-  background-color: #FF6060;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  align-items: center;
-  border-radius: 5px;
-}
-.infos-id .card-infos .defilement-button .defilement-individual button {
-  background-color: #FF6060;
-  border: none;
-  color: white;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 18px;
-}
-.infos-id .card-infos .defilement-button .defilement-individual img {
-  max-width: 32px;
-  padding-right: 15px;
-}
-
-.star-filled {
-  color: #FF6060;
-}
+}/*# sourceMappingURL=appart.css.map */

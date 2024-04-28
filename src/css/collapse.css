@@ -1,0 +1,41 @@
+.collapse {
+  width: 45%;
+  background-color: white;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.collapse .collapse-title {
+  background-color: #FF6060;
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  padding: 10px 10px;
+  align-items: center;
+}
+.collapse .collapse-title p {
+  border: none;
+  color: white;
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+}
+.collapse .collapse-title img {
+  max-width: 24px;
+  max-height: 13px;
+  padding-right: 15px;
+  transform-origin: center center;
+}
+.collapse .collapse-title #collapse-img {
+  transition: 0.4s;
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+.collapse #collapse-content {
+  background-color: rgba(246, 246, 246, 0.4509803922);
+  width: 100%;
+  padding: 20px 10px;
+  line-height: 25.67px;
+}/*# sourceMappingURL=collapse.css.map */

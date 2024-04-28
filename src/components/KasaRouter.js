@@ -1,17 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home'
-import Banner from './Banner'
-import SectionF from './SectionF'
+import Header from './Header'
 import Footer from './Footer'
 import Appart from './Appart'
-import jsonData from '../logements.json';
 
 
 function KasaRouter() {
   return (
     <Router>
-      <Banner />
+      <Header />
       <Routes>
         <Route path='/' element={
           <Home />

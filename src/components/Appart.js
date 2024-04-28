@@ -1,10 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import jsonData from '../logements.json';
-import ArrowUp from "../img/Vector-up.png";
 import "../css/appart.css"
 import { CreateTags } from "./appart-function";
-import RatingStars from "./Stars-Appart"
+import RatingStars from "./RatingStars"
+import Collapse from "./Collapse"
+
 export default function Appart() {
     const params = useParams();
     const id = params.id;
@@ -32,18 +33,13 @@ export default function Appart() {
                             <p>{selectedData.host.name}</p>
                             <img src={selectedData.host.picture} alt={selectedData.host.name} />
                         </div>
-                            <RatingStars tags={selectedData.ratings} />
+                            <RatingStars rating={selectedData.rating} />
                     </div>
                 </div>
-                <div className='defilement-button'>
-                    <div className='defilement-individual'>
-                        <button>Description</button>
-                        <img src={ArrowUp} alt="Arrow Up" />
-                    </div>
-                    <div className='defilement-individual'>
-                        <button>Équipements</button>
-                        <img src={ArrowUp} alt="Arrow Up" />
-                    </div>
+                <div className='collapse-container'>
+                   <Collapse title="Description" content={selectedData.description}/>
+                   <Collapse title="Équipements" content={selectedData.equipments}/>
+                 
                 </div>
             </div>
         </div>

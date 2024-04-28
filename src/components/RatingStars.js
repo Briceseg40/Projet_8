@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/ratingstars.css'
 
 function generateStars(rating) {
     const filledStars = parseInt(rating); 
@@ -6,11 +7,11 @@ function generateStars(rating) {
     const stars = [];
 
     for (let i = 0; i < filledStars; i++) {
-        stars.push(<h1>Coucou</h1>);
+        stars.push(<i class="fa-solid fa-star filled-star"></i>);
     }
 
     for (let i = 0; i < emptyStars; i++) {
-        stars.push(<i class="fa-duotone fa-star"></i>);
+        stars.push(<i class="fa-solid fa-star empty-star"></i>);
     }
 
     return stars;
