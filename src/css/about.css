@@ -1,0 +1,13 @@
+.container-banner {
+  width: 100%;
+}
+.container-banner .about-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container-banner .about-infos .collapse {
+  width: 60%;
+  margin: 15px 0;
+}/*# sourceMappingURL=about.css.map */

@@ -4,6 +4,7 @@ import Home from './Home'
 import Header from './Header'
 import Footer from './Footer'
 import Appart from './Appart'
+import About from './About';
 
 
 function KasaRouter() {
@@ -16,6 +17,9 @@ function KasaRouter() {
         } />
         <Route path='/location/:id' element={
           <Appart />
+        } />
+          <Route path='/about' element={
+          <About />
         } />
       </Routes>
       <Footer />

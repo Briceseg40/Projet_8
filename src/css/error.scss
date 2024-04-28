@@ -1,0 +1,25 @@
+.container-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FF6060;
+    .message-error {
+        h1 {
+            font-size: 288px;
+            margin-bottom: 60px;
+
+        }
+        h4 {
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 80px;
+        }
+    }
+    a {
+        margin-bottom: 80px;
+
+        font-size: 18px;
+        color: black;   
+    }
+}

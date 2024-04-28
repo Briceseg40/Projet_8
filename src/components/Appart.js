@@ -5,13 +5,14 @@ import "../css/appart.css"
 import { CreateTags } from "./appart-function";
 import RatingStars from "./RatingStars"
 import Collapse from "./Collapse"
+import Error from "./Error"
 
 export default function Appart() {
     const params = useParams();
     const id = params.id;
     const selectedData = jsonData.find(data => data.id === id);
     if (!selectedData) {
-        return <div>Aucun logement trouvé pour cette ID</div>;
+        return <Error />;
     }
 
     return (

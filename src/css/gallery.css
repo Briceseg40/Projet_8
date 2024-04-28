@@ -28,7 +28,18 @@
 }
 #gallery .case-gallery h3 {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   color: white;
   padding-left: 5px;
+}
+
+@media (min-width: 375px) {
+  .container-home {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .container-home #gallery {
+    padding: 0;
+    background-color: white;
+  }
 }/*# sourceMappingURL=gallery.css.map */

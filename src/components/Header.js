@@ -1,6 +1,7 @@
 import logo from "../img/LOGO.png";
 import "../css/header.css"
 import { Link } from "react-router-dom";
+import About from "./About"
 const naviguations = [
     { name: 'Accueil', link: '/' },
     { name: 'A Propos', link: '/about' }
@@ -16,7 +17,7 @@ export default function Header() {
                 <ul>
                     {naviguations.map(naviguation => (
                         <li key={naviguation.name}>
-                        <a href={naviguation.link}>{naviguation.name}</a>
+                        <Link to={naviguation.link}>{naviguation.name}</Link>
                     </li>))}
                 </ul>
             </div>

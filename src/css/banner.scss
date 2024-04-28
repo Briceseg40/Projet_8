@@ -1,8 +1,9 @@
 .banner {
     max-width: 1240px;
     margin: 25px auto;
-
     max-height: 225px;
+    min-height: 111px;
+
     position: relative;
     border-radius: 20px;
 
@@ -18,17 +19,37 @@
     }
     img {
     border-radius: 20px;
+    width: 100%;
+    min-height: 111px;
+
 
     }
     h3 {
         font-size: 48px;
         color: white;
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); 
         text-align: center;     
         padding: 10px; 
         white-space: nowrap;
 }
+}
+
+@media (min-width: 375px) { 
+    .banner  {
+
+        .overlay {
+
+        }
+        h3 {
+            padding-left: 25px;
+            font-size: 24px;
+        white-space: wrap;
+        text-align: left;
+        width: 100%;
+
+        }
+    }
 }

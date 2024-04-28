@@ -7,7 +7,7 @@ import Banner from "./Banner"
 export default function Home() {
   
     return (
-        <div>
+        <div className='container-home'>
             <Banner />
             <div id='gallery'>
                 {jsonData.map((data, i) => (
