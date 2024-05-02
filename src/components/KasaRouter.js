@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Appart from './Appart'
 import About from './About';
+import Error from './Error';
 
 
 function KasaRouter() {
@@ -20,6 +21,9 @@ function KasaRouter() {
         } />
           <Route path='/about' element={
           <About />
+        } />
+        <Route path='*' element={
+          <Error />
         } />
       </Routes>
       <Footer />

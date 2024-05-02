@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ArrowUp from "../img/Vector-up.png";
 import "../css/collapse.css"
 
 export default function Collapse({ title, content }) {
@@ -20,9 +19,9 @@ export default function Collapse({ title, content }) {
         return (<div onClick={toggleCollapse} className='collapse'>
             <div className="collapse-title">
                 <p>{title}</p>
-                <img id="collapse-img" src={ArrowUp} alt="Arrow Up" />
+                <i className="fa-solid fa-chevron-up collapse-img"></i>
             </div>
-            <p id="collapse-content">{renderedContent}</p>
+            <p className="collapse-content">{renderedContent}</p>
 
         </div>)
     } else {
@@ -30,7 +29,7 @@ export default function Collapse({ title, content }) {
             <div className="collapse-title">
 
                 <p>{title}</p>
-                <img  src={ArrowUp} alt="Arrow Up" />
+                <i class="fa-solid fa-chevron-up"></i>
             </div>
 
         </div>)

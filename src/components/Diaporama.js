@@ -7,13 +7,14 @@ function Diaporama({ images }) {
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        (prevIndex + 1 + images.length) % images.length
+
         );
     };
 
     const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        (prevIndex - 1 + images.length) % images.length
         );
     };
 

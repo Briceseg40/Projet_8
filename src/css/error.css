@@ -14,6 +14,9 @@
   font-weight: 500;
   margin-bottom: 80px;
 }
+.container-error .message-error .return {
+  display: none;
+}
 .container-error a {
   margin-bottom: 80px;
   font-size: 18px;
@@ -36,6 +39,9 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 100px;
+  }
+  .container-error .message-error .return {
+    display: inline;
   }
   .container-error a {
     margin-bottom: 100px;

@@ -26,14 +26,16 @@
   max-width: 24px;
   max-height: 13px;
   padding-right: 15px;
-  transform-origin: center center;
 }
-.collapse .collapse-title #collapse-img {
-  transition: 0.4s;
-  transform: rotate(180deg);
-  transform-origin: center center;
+.collapse .collapse-title .fa-chevron-up {
+  color: white;
+  font-size: 24px;
+  transition: 0.4s ease-in-out;
 }
-.collapse #collapse-content {
+.collapse .collapse-title .collapse-img {
+  transform: rotate(-180deg);
+}
+.collapse .collapse-content {
   background-color: rgba(246, 246, 246, 0.4509803922);
   width: 100%;
   padding: 20px 10px;
