@@ -8,7 +8,7 @@ export default function Collapse({ title, content }) {
     };
     let renderedContent = content;
 
-    if (title == "Équipements") {
+    if (title === "Équipements") {
         renderedContent = content.map((content, index) => (
                 <p key={index}>{content}</p>
             ));

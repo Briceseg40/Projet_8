@@ -16,7 +16,7 @@ export default function Header() {
             <div>
                 <ul>
                     {naviguations.map(naviguation => (
-                        <li key={naviguation.name}>
+                        <li>
                         <Link to={naviguation.link}>{naviguation.name}</Link>
                     </li>))}
                 </ul>
